@@ -1,0 +1,6 @@
+{
+  "name": "Copy3 of Calculadora de Doses de Emergência",
+  "description": "Uma aplicação web para calcular rapidamente doses de medicamentos de emergência com base no peso do paciente e na concentração da ampola disponível. Ideal para situações críticas como intubação e uso de drogas vasoativas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
