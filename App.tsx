@@ -3,6 +3,8 @@ import { DRUG_CATEGORIES } from './constants';
 import DrugCard from './components/DrugCard';
 import ExportModal from './components/ExportModal';
 import GithubGuideModal from './components/GithubGuideModal';
+import PWAInstallButton from './components/PWAInstallButton';
+import OfflineIndicator from './components/OfflineIndicator';
 import { 
   Activity, 
   Download, 
@@ -76,8 +78,9 @@ export default function App() {
             </div>
           </div>
 
-          {/* Action Buttons: Export & GitHub */}
+          {/* Action Buttons: PWA Install, Export & GitHub */}
           <div className="flex items-center gap-2">
+            <PWAInstallButton />
             <button
               onClick={() => setIsExportOpen(true)}
               className="flex items-center gap-1.5 px-3 py-2 text-xs md:text-sm font-semibold rounded-lg bg-slate-700/80 hover:bg-slate-700 text-slate-200 border border-slate-600 transition-colors shadow-sm"
@@ -299,9 +302,10 @@ export default function App() {
         </div>
       </footer>
 
-      {/* Modals */}
+      {/* Modals & PWA Offline Indicator */}
       <ExportModal isOpen={isExportOpen} onClose={() => setIsExportOpen(false)} />
       <GithubGuideModal isOpen={isGithubGuideOpen} onClose={() => setIsGithubGuideOpen(false)} />
+      <OfflineIndicator />
     </div>
   );
 }

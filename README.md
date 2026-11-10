@@ -4,12 +4,14 @@ Uma aplicação web clínica, rápida e intuitiva para cálculo de doses, volume
 
 ---
 
-## ⚡ 100% Independente de APIs & Funciona Offline
+## ⚡ 100% PWA (Progressive Web App) & Offline
 
-> **Sim! Esta aplicação é 100% autônoma.**
+> **Sim! Esta aplicação é um PWA completo.**
+> - **Instalável como Aplicativo Nativo:** Pode ser instalado no Android (via Chrome), no iOS (via Safari "Adicionar à Tela de Início") ou no Windows/Mac/Linux (via Chrome/Edge).
+> - **Funciona 100% Offline:** Utiliza Service Worker (`workbox`) para salvar todo o código, fontes e imagens em cache local. Funciona mesmo sem nenhuma conexão à internet.
 > - **Zero dependências de backend ou APIs externas:** todas as fórmulas matemáticas farmacológicas são calculadas localmente no navegador (client-side) pelo React/TypeScript.
-> - **Funciona sem internet (offline):** uma vez carregada no navegador do celular ou computador do plantonista, pode ser usada sem sinal de Wi-Fi ou rede móvel no pronto-socorro e na UTI.
 > - **Sem custos de hospedagem:** por ser estática, pode ser hospedada gratuitamente no GitHub Pages, Vercel, Netlify, Cloudflare Pages ou aberta localmente.
+
 
 ---
 

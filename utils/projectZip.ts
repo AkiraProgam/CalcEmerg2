@@ -10,11 +10,14 @@ const rawFiles = import.meta.glob<string>(
     '../index.tsx',
     '../index.css',
     '../package.json',
+    '../package-lock.json',
     '../tsconfig.json',
     '../vite.config.ts',
     '../README.md',
     '../.gitignore',
     '../components/*.tsx',
+    '../hooks/*.ts',
+    '../public/*.svg',
     '../.github/workflows/*.yml'
   ],
   { query: '?raw', eager: true, import: 'default' }
