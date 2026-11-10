@@ -195,13 +195,28 @@ git push -u origin main`;
             <Globe className="w-4 h-4" />
             <span>Como colocar online de graça no GitHub Pages:</span>
           </div>
-          <ol className="text-xs text-slate-300 list-decimal list-inside space-y-1">
+          <ol className="text-xs text-slate-300 list-decimal list-inside space-y-1.5 leading-relaxed">
             <li>No GitHub, abra a aba <strong>Settings</strong> do seu repositório.</li>
-            <li>No menu lateral, clique em <strong>Pages</strong>.</li>
-            <li>Em <em>Build and deployment &gt; Source</em>, selecione <strong>GitHub Actions</strong>.</li>
-            <li>O arquivo <code className="text-cyan-300">.github/workflows/deploy.yml</code> (já incluído no projeto) fará o build e criará o seu link web público gratuito em segundos!</li>
+            <li>No menu lateral esquerdo, clique em <strong>Pages</strong>.</li>
+            <li>Em <em>Build and deployment &gt; Source</em>, escolha <strong>GitHub Actions</strong> (Recomendado).</li>
+            <li>O arquivo <code className="text-cyan-300">.github/workflows/deploy.yml</code> fará o build e publicará seu site em segundos!</li>
           </ol>
         </div>
+
+        {/* Alerta de Página em Branco */}
+        <div className="p-4 bg-amber-950/40 border border-amber-800/60 rounded-xl space-y-2">
+          <div className="flex items-center gap-2 text-amber-300 font-bold text-sm">
+            <span>🚨 Abriu uma página em branco? Veja como resolver:</span>
+          </div>
+          <p className="text-xs text-slate-300 leading-relaxed">
+            Se a página abriu em branco, é porque o GitHub Pages está tentando abrir o arquivo bruto <code className="text-cyan-300">index.tsx</code> (que os navegadores não entendem) em vez do código compilado.
+          </p>
+          <div className="text-xs text-slate-300 space-y-1.5 pt-1">
+            <p><strong>Solução 1 (Recomendada):</strong> Vá em <em>Settings &gt; Pages &gt; Source</em> e selecione <strong>GitHub Actions</strong>.</p>
+            <p><strong>Solução 2:</strong> Se estiver usando <em>Deploy from a branch</em>, mude a pasta de <strong>/ (root)</strong> para <strong>/docs</strong> (já deixamos a pasta <code className="text-cyan-300">docs/</code> compilada e pronta no repositório!).</p>
+          </div>
+        </div>
+
 
         {/* Rodar localmente */}
         <div className="p-3 bg-slate-900/60 border border-slate-800 rounded-lg text-xs text-slate-400 flex items-center justify-between">

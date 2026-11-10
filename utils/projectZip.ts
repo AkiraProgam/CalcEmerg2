@@ -18,10 +18,13 @@ const rawFiles = import.meta.glob<string>(
     '../components/*.tsx',
     '../hooks/*.ts',
     '../public/*.svg',
+    '../docs/*',
+    '../docs/assets/*',
     '../.github/workflows/*.yml'
   ],
   { query: '?raw', eager: true, import: 'default' }
 );
+
 
 export async function downloadProjectZip() {
   const zip = new JSZip();
